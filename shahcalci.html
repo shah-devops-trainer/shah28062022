@@ -4,6 +4,19 @@
 		var LAST_NAME = "Chand Shah";
 		var RES_NAME;
 		
+		function doIndian()
+		{
+			FIRST_NAME = document.getElementById("fName").value;
+			console.log("Entered first name ==> "+FIRST_NAME);
+			
+			LAST_NAME = document.getElementById("lName").value;
+			console.log("Entered last name ==> "+LAST_NAME);
+			
+			RES_NAME = FIRST_NAME + " " + LAST_NAME;
+			console.log("Result Indian name is ==> "+ RES_NAME);
+			
+			document.getElementById("shahOP").innerHTML = RES_NAME;
+		}
 	
 	</script>
 
@@ -13,4 +26,7 @@
 	
 	Enter Last Name :
 	<input type="text" id="lName">  </input>
+	
+	<button onclick="doIndian()" > Indian Style </button>
+	<div id="shahOP"> </div>
 </html>
